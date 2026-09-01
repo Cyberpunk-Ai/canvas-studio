@@ -25,8 +25,25 @@ import {
 } from "lucide-react";
 
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: "Lumen — Where Your World Comes to Life" },
+      {
+        name: "description",
+        content:
+          "Lumen is a social platform for creators and communities: smart feeds, live Spaces, stories, and encrypted chat in one beautiful place.",
+      },
+      { property: "og:title", content: "Lumen — Where Your World Comes to Life" },
+      {
+        property: "og:description",
+        content:
+          "Share moments, join live Spaces, and grow your audience on Lumen — the social home for creators and communities.",
+      },
+    ],
+  }),
   component: Index,
 });
+
 
 /* ---------------------------------- hooks --------------------------------- */
 
